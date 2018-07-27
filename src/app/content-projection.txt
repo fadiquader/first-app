@@ -1,0 +1,4 @@
+we can design our component with something called content projection
+to enable it to be customised by the component or developer who is using it.
+
+we add the tag <ng-content></ng-content> anywhere in our template HTML for our component.

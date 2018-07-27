@@ -1,0 +1,8 @@
+<div>
+  <div class="collapse-title" (click)="toggleCollapse()">
+    <ng-content select=".title"></ng-content>
+  </div>
+  <div *ngIf="isCollapsed" class="collapse-description">
+    <ng-content select=".description"></ng-content>
+  </div>
+</div>
