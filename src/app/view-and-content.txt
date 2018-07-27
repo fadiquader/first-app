@@ -1,0 +1,7 @@
+ViewChild & ViewChildren
+* The view children of a given component are the elements
+used within its template, its view.
+* We can get a reference to these view children in our component class by using the @ViewChild decorator.
+* ViewChild referencing a template local variable.
+
+ContentChild & ContentChildren

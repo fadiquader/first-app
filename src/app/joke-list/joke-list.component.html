@@ -4,12 +4,9 @@
   <app-joke
     *ngFor="let joke of jokeList"
     [data]="joke">
-    <div>Normal content projection</div>
-
-    <!--<h3>Hi from Content Projection</h3>-->
-    <!--<p>Hola from content Projection</p>-->
-
-    <!--<div class="title">this is title</div>-->
-    <!--<div class="description">this is title</div>-->
+    <h3>Hi Setup: {{ joke.setup }}</h3>
+    <p>Hola Punchline {{ joke.punchline }}</p>
   </app-joke>
+
+  <!--<ng-content></ng-content>-->
 </div>

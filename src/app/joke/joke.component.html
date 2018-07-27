@@ -4,13 +4,8 @@
     <p>{{ data.punchline }}</p>
   </div>
   <div class="content-proj">
-    <!--<ng-content></ng-content>-->
-
     <ng-content select="h3"></ng-content>
     <ng-content select="p"></ng-content>
-
-    <!--<ng-content select=".title"></ng-content>-->
-    <!--<ng-content select="decription"></ng-content>-->
   </div>
   <button (click)="data.toggle()">
     {{ data.hide ? 'Hide' : 'Show' }}

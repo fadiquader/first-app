@@ -14,4 +14,7 @@ export class JokeComponent implements OnInit {
   ngOnInit() {
   }
 
+  logInput() {
+    console.log('Log Input: ', this.data);
+  }
 }

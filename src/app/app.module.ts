@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { JokeComponent } from './joke/joke.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { JokeFormComponent } from './joke-form/joke-form.component';
-import { CollapseComponent } from './collapse/collapse.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,6 @@ import { CollapseComponent } from './collapse/collapse.component';
     JokeComponent,
     JokeListComponent,
     JokeFormComponent,
-    CollapseComponent
   ],
   imports: [
     BrowserModule
