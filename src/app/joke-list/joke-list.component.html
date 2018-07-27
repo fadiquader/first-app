@@ -1,9 +1,15 @@
 <div class="container">
   <br>
   <app-joke-form (jokeCreated)="addNewJoke($event)"></app-joke-form>
+  <button class="btn btn-danger" (click)="clearJoks()">
+    Clear
+  </button>
   <app-joke
     *ngFor="let joke of jokeList"
-    [data]="joke">
+    [data]="joke"
 
+  >
+    <!--(selectJoke)="selectedJoke = $event"-->
+    <!--[isSelected]="joke.id === selectedJoke.id"-->
   </app-joke>
 </div>

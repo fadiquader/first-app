@@ -13,6 +13,7 @@ export class JokeFormComponent implements OnInit {
   ngOnInit() {
   }
   addJoke(setupVal: string, punchlineVal: string) {
+    if(!setupVal.trim() || !punchlineVal.trim()) return;
     this.jokeCreated.emit(new Joke(setupVal, punchlineVal));
   }
 }

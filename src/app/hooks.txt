@@ -1,0 +1,32 @@
+lifecycle hooks
+
+1- Hooks for the component
+* constructor
+
+* ngOnChanges
+Invoked every time there is a change in one of the input properties of the component.
+
+* ngOnInit
+Invoked when given component has been initialized.
+
+* ngOnDestroy
+This method will be invoked just before Angular destroys the component.
+
+
+2- Hooks for the components children
+* ngAfterContentInit
+Invoked after Angular performs any content projection into the components view
+
+* ngAfterContentChecked
+Invoked each time the content of the given component
+has been checked by the change detection mechanism of Angular.
+
+Angular Change Detection mechanism
+https://blog.angular-university.io/how-does-angular-2-change-detection-really-work/
+
+* ngAfterViewInit
+Invoked when the component’s view has been fully initialized.
+
+* ngAfterViewChecked
+Invoked each time the view of the given component has been
+checked by the change detection mechanism of Angular.

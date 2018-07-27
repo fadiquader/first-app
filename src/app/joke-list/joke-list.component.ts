@@ -8,12 +8,14 @@ import {Joke} from '../models/joke';
 })
 export class JokeListComponent implements OnInit {
   jokeList: Array<Joke>;
+  // selectedJoke: Joke;
   constructor() {
     this.jokeList = [
       new Joke('obj #1', 'punchline #1'),
       new Joke('obj #2', 'punchline #2'),
       new Joke('obj #3', 'punchline #3')
     ];
+    // this.selectedJoke = this.jokeList[0];
   }
 
   ngOnInit() {
@@ -21,6 +23,10 @@ export class JokeListComponent implements OnInit {
 
   addNewJoke(val: Joke) {
     this.jokeList.unshift(val);
+  }
+
+  clearJoks() {
+    this.jokeList = [];
   }
 
 }
