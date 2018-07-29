@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-collapse',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./collapse.component.css']
 })
 export class CollapseComponent implements OnInit {
+  @Input() canCollapse: boolean;
   isCollapsed: boolean;
   constructor() {
     this.isCollapsed = false;
@@ -15,6 +16,8 @@ export class CollapseComponent implements OnInit {
   }
 
   toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
+    if (this.canCollapse) {
+      this.isCollapsed = !this.isCollapsed;
+    }
   }
 }

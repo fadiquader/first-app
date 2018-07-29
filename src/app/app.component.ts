@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WAMD';
+  isEnabled: boolean;
+  constructor() {
+    this.isEnabled = true;
+  }
+
+  enableCollapse() {
+    this.isEnabled = !this.isEnabled;
+  }
 }
