@@ -15,4 +15,5 @@ export class JokeFormComponent implements OnInit {
   addJoke(setupVal: string, punchlineVal: string) {
     this.jokeCreated.emit(new Joke(setupVal, punchlineVal));
   }
+
 }

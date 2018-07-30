@@ -1,0 +1,10 @@
+<div class="container">
+  <br>
+  <div class="form-group">
+    <input class="form-control" type="text" (appGooglePlaces)="selectPlace($event)">
+    <div  *ngIf="place">
+      <p>Place: {{ place.formatted_address }}</p>
+    </div>
+  </div>
+  <br>
+</div>
